@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter:400,700">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header-h1" id="myDiv">Social Media Dashboard</h1>
+      <p class="header-p">Total Followers: 23,004</p>
+    </header>
+
+    <p class="theme-selector">Light Mode
+    <!-- <button onclick="myFunction()"> THEME</button></p> -->
+      <div id="button" onclick="myFunction()">
+        <span id="innerButton"></span>
+      </div>
+    </p>
+
+    <div class="item item-1">
+      <p class="item-1-username"><img class="item-logo item-1-logo" src="images/icon-facebook.svg" alt="facebook logo" height="" width="">@nathanf</p>
+      <h1 class="item-1-followers-1">1987</h1>
+      <span class="item-1-followers-2">Followers</span>
+      <p class="item-1-change"><img class="item-change-logo item-change-logo-up" src="images/icon-up.svg" alt="gain logo">12 Today</p>
+    </div>
+
+    <div class="item item-2">
+      <p class="item-2-username"><img src="images/icon-twitter.svg" alt="twitter logo" class="item-2-logo item-logo" height="" width="">@nathanf</p>
+      <h1 class="item-2-followers-1">1044</h1>
+      <span class="item-2-followers-2">Followers</span>
+      <p class="item-2-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">99 Today</p>
+    </div>
+
+    <div class="item item-3">
+      <p class="item-3-username"><img src="images/icon-instagram.svg" alt="insta logo" class="item-3-logo item-logo" height="" width="">@realnathanf</p>
+      <h1 class="item-3-followers-1">11k</h1>
+      <span class="item-3-followers-2">Followers</span>
+      <p class="item-3-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">1099 Today</p>
+    </div>
+
+    <div class="item item-4">
+      <p class="item-4-username"><img src="images/icon-youtube.svg" alt="Youtube logo" class="item-4-logo item-logo" height="" width="">Nathan F.</p>
+      <h1 class="item-4-followers-1">8239</h1>
+      <span class="item-4-followers-2">Subscribers</span>
+      <p class="item-4-change"><img src="images/icon-down.svg" alt="loss logo" class="item-change-logo item-change-logo-down">144 Today</p>
+    </div>
+
+    <p class="part-2">Overview - Today</p>
+
+    <div class="item item-5">
+      <p class="item-5-action">Page Views</p>
+      <img src="images/icon-facebook.svg" alt="Facebook logo" class="item-5-logo">
+      <p class="item-5-figure">87</p>
+      <p class="item-5-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">3%</p>
+    </div>
+
+    <div class=" item item-6">
+      <p class="item-6-action">Likes</p>
+      <img src="images/icon-facebook.svg" alt="Facebook Logo" class="item-6-logo">
+      <p class="item-6-figure">52</p>
+      <p class="item-6-change"><img src="images/icon-down.svg" alt="loss logo" class="item-change-logo item-change-logo-down">2%</p>
+    </div>
+
+    <div class="item item-7">
+      <p class="item-7-action">Likes</p>
+      <img src="images/icon-instagram.svg" alt="Instagram Logo" class="item-7-logo">
+      <p class="item-7-figure">5462</p>
+      <p class="item-7-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">2257%</p>
+    </div>
+
+    <div class="item item-8">
+      <p class="item-8-action">Profile Views</p>
+      <img src="images/icon-instagram.svg" alt="Instagram Logo" class="item-8-logo">
+      <p class="item-8-figure">52k</p>
+      <p class="item-8-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">1375%</p>
+    </div>
+
+    <div class="item item-9">
+      <p class="item-9-action">Retweets</p>
+      <img src="images/icon-twitter.svg" alt="Twitter Logo" class="item-9-logo">
+      <p class="item-9-figure">117</p>
+      <p class="item-9-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">303%</p>
+    </div>
+
+    <div class="item item-10">
+      <p class="item-10-action">Likes</p>
+      <img src="images/icon-twitter.svg" alt="Twitter Logo" class="item-10-logo">
+      <p class="item-10-figure">507</p>
+      <p class="item-10-change"><img src="images/icon-up.svg" alt="gain logo" class="item-change-logo item-change-logo-up">553%</p>
+    </div>
+
+    <div class="item item-11">
+      <p class="item-11-action">Likes</p>
+      <img src="images/icon-youtube.svg" alt="YouTube Logo" class="item-11-logo">
+      <p class="item-11-figure">107</p>
+      <p class="item-11-change"><img src="images/icon-down.svg" alt="loss logo" class="item-change-logo item-change-logo-down">19%</p>
+    </div>
+
+    <div class="item item-12">
+      <p class="item-12-action">Total Views</p>
+      <img src="images/icon-youtube.svg" alt="YouTube Logo" class="item-12-logo">
+      <p class="item-12-figure">1407</p>
+      <p class="item-12-change"><img src="images/icon-down.svg" alt="loss logo" class="item-change-logo item-change-logo-down">12%</p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#" class="name">Okonkwo Kelvin Ekenedilichukwu</a>.
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+  <script src="gulpfile.js" charset="utf-8"></script>
+</body>
+
+</html>
